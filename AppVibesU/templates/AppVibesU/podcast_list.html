@@ -1,0 +1,33 @@
+{% extends 'AppVibesU/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="add__title__container title__container bg-gradient-primary-to-secondary">
+    <h1>Podcasts</h1>
+    <p>Add new</p>
+    <a href="{% url 'create_podcast' %}"><img class="add_icon" src="https://res.cloudinary.com/ijac-it-solutions/image/upload/v1692193809/plus_vmj3qb.png" alt="add podcast"></a>
+</div>
+
+  <div class="cards__container bg-gradient-primary-to-secondary">
+    {% for podcast in podcast_list %}
+    <div data-aos="zoom-out-up" class="card">
+      <div class="card__image">
+        <img src="{{podcast.image}}" alt="{{ podcast.title }}">
+      </div>
+      <div class="card__info">
+        <h3>{{ podcast.title }}</h3>
+        <h4>{{ podcast.host }}</h4>
+        <h6>{{ podcast.genre }}</h6>
+      </div>
+      <div class="crud__container">
+        <a href="{% url 'update_podcast' podcast.id %}"><h6><img class="favorite_icon icon_crud__edit" src="https://res.cloudinary.com/ijac-it-solutions/image/upload/v1692150451/img/lapiz_1_eggczm.png" alt="edit podcast"></h6></a>
+        <a href="{% url 'delete_podcast' podcast.id %}"> <h6><img class="favorite_icon icon_crud" src="https://res.cloudinary.com/ijac-it-solutions/image/upload/v1692150688/img/delete_rzkpjr.png" alt="delete podcast"></h6></a>     
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+
+
+
+{% endblock %}

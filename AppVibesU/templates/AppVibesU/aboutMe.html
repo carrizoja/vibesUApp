@@ -1,0 +1,55 @@
+{% extends 'AppVibesU/base.html' %}
+{% load static %}
+
+{% block title %}
+About me
+{% endblock %}
+
+{% block content %}
+
+  <div class="title__container title__container__aboutMe bg-gradient-primary-to-secondary">
+    <h1>About Me</h1>
+  </div>
+  <section class="container__aboutMe">
+    <div class="card__container">
+      <img class="card__avatar" src="{% static 'AppVibesU/assets/img/avatar2.jpg' %}" alt="aboutMe"/>
+      <h5>Hello! I'm</h5>
+      <h2>José Carrizo</h2>
+      <h4>Systems Engineer</h4>
+      <h4>Full Stack Developer</h4>
+      <h4>Ux Ui Designer</h4>
+      <div class="card__avatar__description">
+        <p>I am a Systems Engineer and Full Stack Developer. Currently focused on both Front End and Back End fields due to the versatility and coexistence of both approaches. My main objective is to work as a Full Stack Developer.</p>
+      </div>
+      <div class="social__container">
+        <a href=""><i class="fab fa-facebook-square"></i></a>
+        <a href=""><i class="fab fa-instagram-square"></i></a>
+        <a href=""><i class="fab fa-twitter-square"></i></a>
+        <a href=""><i class="fab fa-linkedin"></i></a>
+      </div>  
+    </div>
+    <div class="container__description">
+      <h4>About Coderhouse Python course experience</h4>
+      <p>Previously, I have been working with C#, Microsoft SQL, Node Js, React, Angular, and MongoDB projects. I wanted to learn Python and I decided to enroll in the Coderhouse course. 
+        Although I have never worked with Google Colabs, I could learn how to apply all my knowledge in Object Oriented Programming.
+        Then, we learned the Django framework. We created a fullStack project using an app project. We used models, views, templates, inheritance, routes, authentication and other stuff.
+        For the Front End, we use a bootstrap template.
+        Professor Norman was cool. He is a very experienced Python programmer and we could understand all their notions.       
+      </p>
+      <div class="container__social">
+        <h4>My Portfolio link</h4>
+        <a href="https://josecarrizo-dev.com/" target="_blank"><img class="portfoliolink" src="{% static 'AppVibesU/assets/img/portfoliolink.png' %}" alt="aboutMe"/></a>
+        <h4>My socials networks</h4>
+        <div class="social__container">
+          <a href="https://www.linkedin.com/in/jose-carrizo-dev/" target="_blank"><img class="socials__icons" src="{% static 'AppVibesU/assets/img/linkedin.png' %}" alt="linkedin"></a>
+          <a href="https://www.instagram.com/carrizo.jose/" target="_blank"><img class="socials__icons" src="{% static 'AppVibesU/assets/img/instagram.png' %}" alt="instagram"></a>
+          <a href="https://github.com/carrizoja" target="_blank"><img class="socials__icons" src="{% static 'AppVibesU/assets/img/github.png' %}" alt="instagram"></a>   
+      </div>
+      
+
+    </div>
+  </section>
+
+
+
+{% endblock %}

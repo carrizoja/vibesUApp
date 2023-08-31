@@ -1,0 +1,24 @@
+{% extends 'AppVibesU/base.html' %}
+{% load static %}
+
+{% block title %}
+Login
+{% endblock %}
+
+{% block content %}
+
+<div class="form__container">
+  <form class="form bg-gradient-primary-to-secondary" action="" method="post">
+    <div>
+      <img class="vibesU_logo" src="https://res.cloudinary.com/ijac-it-solutions/image/upload/v1692211716/img/vibes_logo-removebg-preview_tuyjb7.png" alt="vibesU logo">
+    </div>
+      <h1>Login</h1>
+    {% csrf_token %}
+    <table>
+      {{ form.as_p }}    
+    </table>
+    <button class="LoginBtn" type="submit">Log In</button>
+  </form>
+  
+</div>
+{% endblock %}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>New Age - Start Bootstrap Theme</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'AppVibesU/assets/favicon.ico' %}" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <!--  Aos CSS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{% static 'AppVibesU/css/styles.css' %}" rel="stylesheet" />
+    <!-- Project CSS -->
+    <link href="{% static 'AppVibesU/css/project_styles.css' %}" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+        <div class="container px-5">
+            <a class="navbar-brand fw-bold" href="{% url 'home' %}"><img class="vibesU_logo" src="https://res.cloudinary.com/ijac-it-solutions/image/upload/v1692211716/img/vibes_logo-removebg-preview_tuyjb7.png" alt="vibesU logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav me-4 my-3 my-lg-0 navbar-items">   
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="{% url 'home' %}">Home</a></li>  
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="{% url 'aboutMe' %}">About Me</a></li>                                   
+                    {% if user.is_authenticated %}
+                    <div class="dropdown">
+                        <button class="dropbtn"><p>CRUDS</p></button>
+                        <div class="dropdown-content">
+                          <a href="{% url 'artists' %}">Artists</a>
+                          <a href="{% url 'albums' %}">Albums</a>
+                          <a href="{% url 'songs' %}">Songs</a>
+                          <a href="{% url 'podcasts' %}">Podcasts</a>
+                        </div>
+                    </div>       
+                    <div class="dropdown">
+                        <button class="dropbtn"><p>Search</p></button>
+                        <div class="dropdown-content">
+                          <a href="{% url 'searchArtist' %}">Artists</a>
+                          <a href="{% url 'searchAlbum' %}">Albums</a>
+                          <a href="{% url 'searchSong' %}">Songs</a>
+                          <a href="{% url 'searchPodcast' %}">Podcasts</a>
+                        </div>
+                    </div>
+                    <div class="container__account">
+                        <img class="avatar_user" src="{{request.session.avatar}}">
+                        <div class="dropdown">
+                            <button class="edit_profile__button"><p class="account__name">Welcome {{user.username}} </p></button>
+                            <div class="dropdown-content">
+                                <a href="{% url 'editProfile' %}">Edit Profile</a>
+                                <a href="{% url 'add_avatar' %}">Add Avatar</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <Button class="logoutButton"><a href="{% url 'logout' %}">Logout</a></Button>
+                        </div>      
+                    </div>                           
+                    {% else %}
+                    <div class="container__login_register" >
+                        <Button class="container__login_register__loginBtn" ><a href="{% url 'login' %}">Login</a></Button>
+                        <Button class="container__login_register__registerBtn" ><a href="{% url 'register' %}">Register</a></Button>
+                    </div> 
+                    {% endif %}
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+   
+    {% block title %}
+
+    {% endblock title %}
+
+    {% block content %}
+
+    {% endblock content %}
+   
+    <!-- Footer-->
+    <footer class="bg-black text-center py-5">
+        <div class="container px-5">
+            <div class="text-white-50 small">
+                <div class="mb-2">&copy; José Carrizo 2023. All Rights Reserved.</div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Aos Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+   <!--  script for a fade in out effect on scroll -->
+
+    <!-- Core theme JS-->
+   <!-- <script type="" src="{ static 'AppVibesU/js/scripts.js' %}"></script> 
+   <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
+</body>
+
+</html>

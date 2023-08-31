@@ -1,0 +1,26 @@
+{% extends 'AppVibesU/base.html' %}
+{% load static %}
+
+{% block titulo %}
+    Edit Profile
+{% endblock titulo %}
+
+{% block contenido %}
+{% block content %}
+<div class="title__container container__title__edit bg-gradient-primary-to-secondary">
+  <h1>Edit Profile {{user}} </h1>
+</div>
+<div class="form__container container form__container__editUser">
+  <form class="create_form form bg-gradient-primary-to-secondary form_editUser" action="" method="post">
+    {% csrf_token %}
+    <table>
+      {{ form.as_p }}    
+      <button class="LoginBtn create_form__button" type="submit">Update</button>
+    </table>
+  
+  </form>
+</div>
+
+{% endblock %} 
+   
+{% endblock contenido %}

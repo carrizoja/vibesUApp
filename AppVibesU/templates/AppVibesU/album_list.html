@@ -1,0 +1,39 @@
+{% extends 'AppVibesU/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="add__title__container title__container bg-gradient-primary-to-secondary">
+    <h1>Albums</h1>
+    <p>Add new</p>
+    <a href="{% url 'create_album' %}"><img class="add_icon" src="https://res.cloudinary.com/ijac-it-solutions/image/upload/v1692193809/plus_vmj3qb.png" alt="add album"></a>
+</div>
+
+  <!-- album card gallery -->
+  <div class="cards__container bg-gradient-primary-to-secondary">
+    {% for album in album_list %}
+    <div data-aos="zoom-out-up" class="card">
+      <div class="card__image">
+        <img src="{{album.image}}" alt="{{ album.name }}">
+      </div>
+      <div class="card__info">
+        <h3>{{ album.title }}</h3>
+        <h4>{{ album.artist }}</h4>
+        <h6>{{ album.release_date }}</h6>
+        {% if album.is_favorite == True %}
+        <h6><img class="favorite_icon" src="https://res.cloudinary.com/ijac-it-solutions/image/upload/v1691899705/img/heart_gojf0y.png" alt="favorite song"></h6>
+        {% else %}
+        <h6><img class="not_favorite_icon" src="https://res.cloudinary.com/ijac-it-solutions/image/upload/v1691899869/img/not_heart_pilcxr.png" alt="not favorite song"></h6>
+        {% endif %}    
+      </div> 
+      <div class="crud__container">
+        <a href="{% url 'update_album' album.id %}"><h6><img class="favorite_icon icon_crud__edit" src="https://res.cloudinary.com/ijac-it-solutions/image/upload/v1692150451/img/lapiz_1_eggczm.png" alt="edit album"></h6></a>
+        <a href="{% url 'delete_album' album.id %}"> <h6><img class="favorite_icon icon_crud" src="https://res.cloudinary.com/ijac-it-solutions/image/upload/v1692150688/img/delete_rzkpjr.png" alt="delete album"></h6></a>     
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+
+
+
+{% endblock %}

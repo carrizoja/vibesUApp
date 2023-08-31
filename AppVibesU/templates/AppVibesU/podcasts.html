@@ -1,0 +1,28 @@
+{% extends 'AppVibesU/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="title__container bg-gradient-primary-to-secondary">
+    <h1>Podcasts</h1>
+    <p>List of available podcasts</p>
+</div>
+
+  <div class="cards__container bg-gradient-primary-to-secondary">
+    {% for podcast in podcasts %}
+    <div class="card">
+      <div class="card__image">
+        <img src="{{podcast.image}}" alt="{{ podcast.title }}">
+      </div>
+      <div class="card__info">
+        <h3>{{ podcast.title }}</h3>
+        <h4>{{ podcast.host }}</h4>
+        <h6>{{ podcast.genre }}</h6>
+      </div> 
+    </div>
+    {% endfor %}
+
+  </div>
+
+
+
+{% endblock %}

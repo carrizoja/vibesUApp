@@ -1,0 +1,18 @@
+{% extends 'AppVibesU/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="add__title__container title__container bg-gradient-primary-to-secondary">
+  <h1>Podcasts Form</h1>
+  <p>Fill all the fields to post a podcast</p>
+</div>
+<div class="form__container form__container__create__podcast">
+  <form class="form create_form bg-gradient-primary-to-secondary" action="" method="post">
+    {% csrf_token %}
+    <table>       
+      {{form.as_table}}
+    </table>
+    <input class="LoginBtn create_form__button" type="submit" value="Submit">
+  </form>
+</div>   
+{% endblock %}

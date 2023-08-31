@@ -1,0 +1,1129 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+
+/* Device Container */
+
+.container__masthead {
+    background-color: #fff;
+    width: 90%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.device__container {
+    background-color: #fff;
+    border-radius: 10px;
+    height: 600px;
+}
+
+
+#features {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* CSs for navBar */
+.navbar-items {
+    gap: 40 !important;
+}
+
+/* Css for logos vibesU */
+.vibesU_logo {
+    height: 50px;
+
+    width: 150px;
+}
+
+/* CSS for Home */
+.slogan__title {
+    font-size: 3rem;
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+/* Dropdown */
+.dropdown a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+/* CSS for titles */
+
+.title__container {
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 6rem;
+    border-radius: 10px;
+}
+
+
+
+.title__container__home {
+    margin-top: 7rem !important;
+    margin-bottom: 20px !important;
+}
+
+.title__container h1 {
+    font-size: 2rem;
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.title__container p {
+    font-size: 1.5rem;
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.title__gallery {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    height: 50px;
+    padding-top: 5px;
+    background: #fff;
+}
+
+.title__gallery p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+    text-align: center;
+    padding-top: 5px;
+    background: -webkit-linear-gradient(#9f1ae2, #e84c9a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+/*cards container */
+.cards__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    padding: 1rem;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: stretch;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    /*    margin-top: 2rem; */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+/*Css for add titles */
+.add__title__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 430px;
+    background: linear-gradient(to bottom, #080808, #333333);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.card__image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.card__info h3 {
+    font-size: 1.4rem;
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+    margin-top: 1rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.card__info h4 {
+    font-size: 1rem;
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+    margin-top: 0.5rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.card__info h5 {
+    font-size: 1rem;
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+    margin-top: 0.5rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
+.card__info h6 {
+    font-size: 0.8rem;
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+    margin-top: 0.5rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
+.card__info p {
+    font-size: 0.5rem;
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+    margin-top: 0.5rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ----------------------------------- Css for forms -------------------------------------------------------------- */
+.form__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 100vh;
+
+}
+
+.form {
+    margin-top: 3rem;
+    width: 40%;
+    height: 55vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form__container__create {
+    padding-top: 1px;
+    height: 600px;
+    margin-bottom: 25px;
+}
+
+.form__container__create__album {
+    margin-bottom: 50px;
+}
+
+.form__container__create__song {
+    margin-bottom: 110px;
+    margin-top: 85px;
+}
+
+.form__container__create__podcast {
+    margin-bottom: 40px;
+    padding-top: 1px;
+}
+
+.form h1 {
+    font-size: 2rem;
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form label {
+    width: 100px;
+}
+
+.form__container label {
+    font-size: 1rem;
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.form tr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form input {
+    color: #fff;
+    /*  font-size: 1.25rem; */
+    line-height: 1;
+    border-style: none;
+    outline: none;
+    height: calc(0.8em + 1.4em + 0.3em);
+    width: 100%;
+    padding: 0.8em 1em;
+    border: 0.17em solid transparent;
+    background-image: linear-gradient(#000, #000),
+        linear-gradient(120deg, #f09 0%, #0ff 50%, #9f0 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 10px;
+    background-size: 200% 100%;
+    transition: background-position 0.8s ease-out;
+}
+
+.form input:hover {
+    background-position: 100% 0;
+}
+
+.form input:focus {
+    outline-offset: 0.5em;
+}
+
+.submit__button {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: greenyellow;
+    border: none;
+    margin-bottom: 20px !important;
+}
+
+.submit__button:hover {
+    opacity: 0.95;
+}
+
+.LoginBtn {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    background-color: #49b015 !important;
+    background-image: #49b015 !important;
+    background-image: -moz-linear-gradient(top, #5de21a 0%, #49b015 100%) !important;
+    background-image: -webkit-linear-gradient(top, #5de21a 0%, #49b015 100%) !important;
+    background-image: linear-gradient(to bottom, #5de21a 0%, #49b015 100%) !important;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 300ms ease-in-out !important;
+    transition: background 300ms ease-in-out !important;
+}
+
+.LoginBtn:hover {
+    background-position: -200% !important;
+    transition: background 300ms ease-in-out !important;
+}
+
+/* --------------------- Css for register Form ------------------------------------------------- */
+.register__form {
+    height: 95vh;
+}
+
+.register__form label {
+    width: 150px;
+    text-align: left;
+}
+
+.container__form__register__logo {
+    margin-bottom: 30px;
+}
+
+.register__button {
+    margin-bottom: 10px;
+}
+
+
+/* Css for Account */
+.container__account {
+    display: flex;
+
+}
+
+.account__name {
+    font-size: 10px;
+    color: #fff;
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+#id_is_favorite {
+    height: 20px;
+}
+
+#id_is_verified {
+    height: 20px;
+}
+
+aside {
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+
+}
+
+.create_form {
+    height: fit-content;
+}
+
+.create_form__button {
+    width: 100px !important;
+    height: fit-content !important;
+    margin-bottom: 10px !important;
+}
+
+.delete__title {
+    font-size: 1.5rem;
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.delete__title_p {
+    margin-top: 10px;
+    color: red !important;
+}
+
+
+.verified_icon {
+    height: 30px;
+    width: 30px;
+}
+
+.not_verified_icon {
+    height: 30px;
+    width: 30px;
+    opacity: 0.2;
+}
+
+.favorite_icon {
+    height: 20px;
+    width: 18px;
+}
+
+.not_favorite_icon {
+    height: 20px;
+    width: 18px;
+}
+
+/* Css for CRUD container */
+.crud__container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: end;
+    width: 230px;
+}
+
+.icon_crud {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+
+.icon_crud__edit {
+    cursor: pointer;
+    height: 19px;
+    width: 19px;
+}
+
+.icon_crud__edit:hover {
+    opacity: 0.5;
+}
+
+.icon_crud:hover {
+    opacity: 0.5;
+}
+
+.add_icon {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.add_icon:hover {
+    /* increse its size */
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.crudsTitle {
+    margin-bottom: 10px;
+}
+
+/* Css for Dropdown Search Menu */
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90px;
+
+}
+
+.dropbtn p {
+    color: #fff;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+}
+
+.dropbtn p:hover {
+    color: fuchsia;
+    background-position: -200%;
+    transition: background 300ms ease-in-out;
+}
+
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+}
+
+.dropbtn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #393939;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #9f1ae2;
+    border-radius: 5px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-position: -200%;
+    transition: background 300ms ease-in-out;
+}
+
+/* Css for user avatar */
+.avatar_user {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container__user {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Logout button */
+.logoutButton {
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(to bottom, #f029e9, #9f1ae2);
+    margin-left: 35%;
+    background-color: #9f1ae2;
+    background-image: #9f1ae2;
+    background-image: -moz-linear-gradient(top, #f029e9 0%, #9f1ae2 100%);
+    background-image: -webkit-linear-gradient(top, #f029e9 0%, #9f1ae2 100%);
+    background-image: linear-gradient(to bottom, #f029e9 0%, #9f1ae2 100%);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+}
+
+.logoutButton>a {
+    padding: 0 !important;
+}
+
+.logoutButton:hover {
+    background-position: -200%;
+    transition: background 300ms ease-in-out;
+}
+
+.container__login_register {
+    display: flex;
+    flex-direction: row;
+}
+
+.container__login_register button {
+    height: 40px;
+    width: 100px;
+    border: none;
+    margin-left: 10%;
+    border-radius: 5px;
+    background-color: #9f1ae2;
+    background-image: #9f1ae2;
+    background-image: -moz-linear-gradient(top, #f029e9 0%, #9f1ae2 100%);
+    background-image: -webkit-linear-gradient(top, #f029e9 0%, #9f1ae2 100%);
+    background-image: linear-gradient(to bottom, #f029e9 0%, #9f1ae2 100%);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+}
+
+.container__login_register button:hover {
+    background-position: -200%;
+    transition: background 300ms ease-in-out;
+}
+
+.container__login_register a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container__login_register__loginBtn {
+    border-width: 2px 2px 2px 2px !important;
+    border-image: linear-gradient(45deg, #9f1ae2 0%, #f065eb 100%) !important;
+    border-image-slice: 9 !important;
+    border-style: solid !important;
+    background: transparent !important;
+    border-radius: 10px !important;
+}
+
+.container__login_register__loginBtn:hover {
+    border-image: linear-gradient(45deg, #12610d 0%, #19e034 100%) !important;
+    border-image-slice: 9 !important;
+    border-style: solid !important;
+    background: transparent !important;
+    background-position: -200% !important;
+    transition: background 600ms ease-in-out !important;
+}
+
+.errorlist {
+    width: 90%;
+}
+
+.errorlist li {
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    list-style: none;
+
+}
+
+/* Css for testimonials */
+.container__testimonials {
+    margin-bottom: 20px;
+}
+
+.testimonial_avatar {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: center;
+}
+
+.testimonial_avatar__name {
+    font-size: 1rem;
+    font-family: 'Varela Round', sans-serif;
+    color: black;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 10px;
+}
+
+.container__testimonial_avatar {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Css for Edit profile */
+
+.edit_profile__button {
+    background-color: transparent;
+    height: 40px;
+    width: 70px;
+    border-radius: 5px;
+    border: none;
+}
+
+.edit_profile__button p:hover {
+    color: fuchsia
+}
+
+/* Css for Add Avatar */
+.avatar_button {
+    padding: 0 !important;
+}
+
+/* -------------------------------------------- Css for About Me ----------------------------------------------------- */
+.container__aboutMe {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 100vh;
+}
+
+.title__container__aboutMe {
+    margin-top: 5rem !important;
+    margin-bottom: 15px !important;
+}
+
+.card__container {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 0.5rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card__avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #080808, #333333);
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.card__avatar__description {
+    width: 90%;
+}
+
+.card__avatar__description p {
+    width: 70%;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container__description {
+    width: 95%;
+}
+
+.container__description p {
+    width: 90%;
+    text-align: justify;
+}
+
+.container__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials__icons {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.socials__icons:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+.portfoliolink {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* ----------------------------- CSS for Carousel --------------------------------------------------------------- */
+
+.carousel-inner {
+    height: 400px;
+    width: 90%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.carousel-item {
+    background-color: #fff;
+    height: 330px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.carousel-item__text_container {
+    /* Set text center vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+    /* Set text center horizontally */
+    text-align: center;
+
+}
+
+.carousel-item p {
+    font-size: 2rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    background: -webkit-linear-gradient(#f029e9, #9f1ae2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* CSS ---------------- for Delete models -----------   */
+.title__container__delete {
+    margin-top: 105px;
+}
+
+.container__delete {
+    background-color: #fff;
+    width: 90%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.container__delete h4 {
+    color: #000;
+    background: -webkit-linear-gradient(#6610f2, #d63384);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* -------------------- Css for Search -------------- */
+.form__container__search {
+    height: 65vh;
+}
+
+.form__search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 4rem !important;
+}
+
+.search__container {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.search__container input {
+    width: 100%;
+    height: 60px;
+    padding-left: 10px;
+
+}
+
+.form__search h4 {
+    font-size: 1rem;
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.container__search__title {
+    margin-top: 100px;
+    height: 60px;
+    width: 90%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container__search__title h1 {
+    color: #fff;
+    text-align: center;
+    padding-top: 9px;
+    font-size: 2rem;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.container__form__logo {
+    margin-bottom: 70px;
+}
+
+/* CSS for Edit User */
+.container__title__edit {
+    margin-top: 6.5rem !important;
+}
+
+.form__container__editUser {
+    height: 680px !important;
+}
+
+.form_editUser {
+    margin-top: 0 !important;
+    height: 650px;
+}
+
+.form_editUser label {
+    width: 150px;
+    text-align: left;
+}
+
+
+/* CSS for Add Avatar */
+
+.form_addAvatar {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_addAvatar input {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.addAvatarBtn {
+    width: 150px !important;
+    height: 40px !important;
+}
+
+.form__container__addAvatar {
+    height: 65vh !important;
+    margin-bottom: 30px;
+}
+
+.title__container__addAvatar {
+    margin-top: 5rem !important;
+}
+
+/* CSS form LogOut */
+
+
+.form__logOut {
+    background-color: #fff !important;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form__logOut__title {
+    background: -webkit-linear-gradient(#d63384, #6610f2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Css for audio control */
+audio {
+    width: 230px;
+    height: 35px;
+    margin-top: 10px;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+    background-color: #333333;
+    color: greenyellow;
+    border: none;
+
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: greenyellow;
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-current-time-display {
+    color: greenyellow;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+    color: greenyellow;
+}
+
+audio::-webkit-media-controls-timeline {
+    color: greenyellow;
+}
+
+/* Threee dots change color */
+audio::-webkit-media-controls-enclosure {
+    background-color: #282828;
+    color: greenyellow;
+}
+
+
+/* CSS for logo's device */
+
+.logoVibesU__device {
+    margin-top: 150px;
+    height: 150px;
+    width: 210px;
+  
+}
+
+
+/* Media Query for screen > 1399px  */
+
+@media only screen and (min-width: 1399px) {
+  
+    .logoVibesU__device {
+        margin-top: 150px;
+        height: 170px;
+        width: 240px;
+      
+    }
+  }
+
+
+/* Media Query for Mobile devices */
+
+@media only screen and (max-width: 991px) {
+   .masthead-device-mockup {
+    display: none !important;
+   }
+   .container__slogan {
+    margin-top: 170px;
+    margin-bottom: auto;
+   }
+   .slogan__title {
+    font-size: 2rem;
+   }
+  } 

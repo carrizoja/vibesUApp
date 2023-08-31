@@ -1,0 +1,30 @@
+{% extends 'AppVibesU/base.html' %}
+{% load static %}
+
+{% block title %}
+Login
+{% endblock %}
+
+{% block content %}
+<div class="title__container title__container__aboutMe bg-gradient-primary-to-secondary">
+  <h1>Logout</h1>
+</div>
+<div class="form__container__search">
+  <form
+    class="form form__logOut"
+    action=""
+    method="post"
+  >
+    {% csrf_token %}
+    <h2 class="form__logOut__title">You are logged out correctly</h2>
+    <!-- Message of redirecting -->
+  <h3 class="form__logOut__title">You will be redirected to the home page in a while...</h3>
+  </form>
+</div>
+<!-- Redirect to home after 4 seconds -->
+<script>
+  setTimeout(function() {
+    window.location.href = "{% url 'home' %}";
+  }, 3000);
+</script> 
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends 'AppVibesU/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="title__container bg-gradient-primary-to-secondary">
+    <h1>Albums</h1>
+    <p>List of available albums</p>
+</div>
+
+  <!-- artists card gallery -->
+  <div class="cards__container bg-gradient-primary-to-secondary">
+    {% for album in albums %}
+    <div class="card">
+      <div class="card__image">
+        <img src="{{album.image}}" alt="{{ album.name }}">
+      </div>
+      <div class="card__info">
+        <h3>{{ album.title }}</h3>
+        <h4>{{ album.artist }}</h4>
+        <h6>{{ album.release_date }}</h6>
+        {% if album.is_favorite == True %}
+        <h6><img class="favorite_icon" src="https://res.cloudinary.com/ijac-it-solutions/image/upload/v1691899705/img/heart_gojf0y.png" alt="favorite song"></h6>
+        {% else %}
+        <h6><img class="not_favorite_icon" src="https://res.cloudinary.com/ijac-it-solutions/image/upload/v1691899869/img/not_heart_pilcxr.png" alt="not favorite song"></h6>
+        {% endif %}    
+      </div> 
+    </div>
+    {% endfor %}
+
+  </div>
+
+
+
+{% endblock %}

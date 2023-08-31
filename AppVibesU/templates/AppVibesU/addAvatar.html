@@ -1,0 +1,25 @@
+{% extends 'AppVibesU/base.html' %}
+{% load static %}
+
+{% block title %}
+Add Avatar
+{% endblock %}
+
+{% block content %}
+<div class="title__container title__container__addAvatar  bg-gradient-primary-to-secondary">
+  <h1>Add Avatar</h1>
+</div>
+<div class="form__container form__container__addAvatar">
+  <form class="form form_addAvatar bg-gradient-primary-to-secondary" action="" method="post" enctype="multipart/form-data">
+    <div class="container__form__logo">
+      <img class="vibesU_logo" src="https://res.cloudinary.com/ijac-it-solutions/image/upload/v1692211716/img/vibes_logo-removebg-preview_tuyjb7.png" alt="vibesU logo">
+    </div>
+    {% csrf_token %}
+    <table>
+      {{ form.as_p }}
+      <button class="LoginBtn addAvatarBtn create_form__button avatar_button" type="submit">Create Avatar</button>
+    </table>
+  </form>
+</div>
+
+{% endblock %}
