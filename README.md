@@ -1,4 +1,4 @@
-# VibesU App (English versión)
+# VibesU App (English version)
 
 ## Description
 
@@ -82,7 +82,7 @@ password: Sietepalabras155
 * If you want to know more info about me, you can go to the "About Me" section on the navbar ;)
 
 
-# Aplicación VibesU (versión en inglés)
+# Aplicación VibesU (versión en español)
 
 ## Descripción
 
