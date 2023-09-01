@@ -148,5 +148,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Trusted Origins
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://web-production-dade.up.railway.app/'
+    'https://web-production-dade.up.railway.app/', 'https://railway.app/'
 ]
