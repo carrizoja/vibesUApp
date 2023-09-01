@@ -1200,6 +1200,11 @@ audio::-webkit-media-controls-enclosure {
     text-align: center;
   }
 
+  .create_form__button {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
 }
 
 /* Media Query for screen > 1399px  */
