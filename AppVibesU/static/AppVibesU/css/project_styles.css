@@ -1205,6 +1205,11 @@ audio::-webkit-media-controls-enclosure {
     margin-right: auto !important;
   }
 
+  .carousel-item__text_container p {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
 }
 
 /* Media Query for screen > 1399px  */
@@ -1314,7 +1319,6 @@ audio::-webkit-media-controls-enclosure {
         align-items: center;
         padding-top: 2rem;
         padding-bottom: 2rem;
-      /*   height: 100vh; */
     }
     
     .title__container__aboutMe {
@@ -1415,4 +1419,9 @@ audio::-webkit-media-controls-enclosure {
     .form_editUser {
         width: 65%;
     }
+
+    .carousel-item__text_container p {
+        margin-top: 20px;
+        font-size: 30px;
+      }
   }
