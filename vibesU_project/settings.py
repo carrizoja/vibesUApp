@@ -144,3 +144,9 @@ LOGOUT_URL = "/"
 import os
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Trusted Origins
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://web-production-dade.up.railway.app/'
+]

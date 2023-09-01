@@ -81,6 +81,10 @@ password: Sietepalabras155
 
 * If you want to know more info about me, you can go to the "About Me" section on the navbar ;)
 
+## Site Deployment
+
+https://web-production-dade.up.railway.app/
+
 
 # Aplicación VibesU (versión en español)
 
@@ -165,3 +169,7 @@ contraseña: Sietepalabras155
 ## Sección Acerca de mí
 
 * Si quieres saber más información sobre mí, puedes ir a la sección "Acerca de mí" en la barra de navegación ;)# vibesUApp
+
+## Despliegue del sitio
+
+https://web-production-dade.up.railway.app/

@@ -768,7 +768,6 @@ section {
     align-items: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    height: 100vh;
 }
 
 .title__container__aboutMe {
@@ -1127,3 +1126,108 @@ audio::-webkit-media-controls-enclosure {
     font-size: 2rem;
    }
   } 
+
+  /* Media query for tablet view */
+
+  @media only screen  and (min-width:768px) and (max-width:1023px){
+    .container__aboutMe {
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      /*   height: 100vh; */
+    }
+    
+    .title__container__aboutMe {
+        margin-top: 5rem !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .card__container {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 0.5rem;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .card__avatar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: linear-gradient(to bottom, #080808, #333333);
+        overflow: hidden;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+    
+    .card__avatar__description {
+        width: 90%;
+    }
+    
+    .card__avatar__description p {
+        width: 70%;
+        text-align: justify;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .container__description {
+        width: 95%;
+    }
+    
+    .container__description p {
+        width: 90%;
+        text-align: justify;
+    }
+    
+    .container__social {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .socials__icons {
+        height: 40px;
+        width: 40px;
+        object-fit: cover;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 15px;
+    }
+    
+    .socials__icons:hover {
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+    
+    .portfoliolink {
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+  }
