@@ -38,6 +38,7 @@
     gap: 40 !important;
 }
 
+
 /* Css for logos vibesU */
 .vibesU_logo {
     height: 50px;
@@ -1130,6 +1131,74 @@ audio::-webkit-media-controls-enclosure {
   /* Media query for tablet view */
 
   @media only screen  and (min-width:768px) and (max-width:1023px){
+
+    /* Navbar */
+
+    .navbar-collapse {
+        height: 310px;
+    }
+
+    .navbar-collapse .dropbtn {
+        margin-left: 0;
+    }
+
+    .navbar-nav {
+        height: 200px;
+    }
+
+    .navbar-collapse .dropdown {
+        margin-left: 0;
+    }
+
+    .container__account {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .dropbtn {
+        margin-left: 0;   
+        width: 50px; 
+        padding-top: 5px;
+    }
+
+    .dropbtn__cruds p {
+        margin-bottom: 5px !important;
+    }
+
+    .dropbtn__search {
+        margin-top: 10px;
+    }
+
+    .dropbtn p {
+        margin-top: 5px;
+    }
+
+    .logoutButton {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .edit_profile__button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .container__login_register {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container__login_register button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .avatar_user {
+        margin-top: 35px;
+    }
+
     .container__aboutMe {
         background-color: #fff;
         display: flex;
@@ -1229,5 +1298,14 @@ audio::-webkit-media-controls-enclosure {
         margin-right: auto;
         margin-bottom: 20px;
         margin-top: 20px;
+    }
+
+    /* CSS for forms */
+    .form {
+        width: 55%;
+    }
+
+    .form_editUser {
+        width: 65%;
     }
   }

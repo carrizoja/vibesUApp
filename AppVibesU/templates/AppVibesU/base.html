@@ -30,7 +30,7 @@
 
 <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm" id="mainNav">
         <div class="container px-5">
             <a class="navbar-brand fw-bold" href="{% url 'home' %}"><img class="vibesU_logo" src="https://res.cloudinary.com/ijac-it-solutions/image/upload/v1692211716/img/vibes_logo-removebg-preview_tuyjb7.png" alt="vibesU logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
@@ -44,7 +44,7 @@
                     <li class="nav-item"><a class="nav-link me-lg-3" href="{% url 'aboutMe' %}">About Me</a></li>                                   
                     {% if user.is_authenticated %}
                     <div class="dropdown">
-                        <button class="dropbtn"><p>CRUDS</p></button>
+                        <button class="dropbtn dropbtn__cruds"><p>CRUDS</p></button>
                         <div class="dropdown-content">
                           <a href="{% url 'artists' %}">Artists</a>
                           <a href="{% url 'albums' %}">Albums</a>
@@ -53,7 +53,7 @@
                         </div>
                     </div>       
                     <div class="dropdown">
-                        <button class="dropbtn"><p>Search</p></button>
+                        <button class="dropbtn dropbtn__search"><p>Search</p></button>
                         <div class="dropdown-content">
                           <a href="{% url 'searchArtist' %}">Artists</a>
                           <a href="{% url 'searchAlbum' %}">Albums</a>
