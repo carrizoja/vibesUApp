@@ -29,7 +29,7 @@ ALLOWED_HOSTS = ['*']
 
 # Trusted Origins
 
-CSRF_TRUSTED_ORIGINS = ['https://web-production-dade.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://web-production-dade.up.railway.app', 'https://tide-stewart-knives-furthermore.trycloudflare.com']
 
 # Application definition
 
