@@ -51,7 +51,7 @@ def artistForm(request):
                             listeners=form.cleaned_data['listeners'],
                             is_favorite=form.cleaned_data['is_favorite'],
                             is_verified=form.cleaned_data['is_verified'],
-                            image=form.cleaned_data['image'],
+                            image=form.cleaned_data['link_address_image'],
                             )
             artist.save()
             return render(request, 'AppVibesU/home.html')
@@ -69,7 +69,7 @@ def songForm(request):
                             artist=form.cleaned_data['artist'],
                             album=form.cleaned_data['album'],
                             length=form.cleaned_data['length'],
-                            image=form.cleaned_data['image'],
+                            image=form.cleaned_data['link_address_image'],
                             plays=form.cleaned_data['plays'],
                             is_favorite=form.cleaned_data['is_favorite'],
                             )
@@ -92,7 +92,7 @@ def albumForm(request):
                             amount_of_songs=form.cleaned_data['amount_of_songs'],
                             album_duration=form.cleaned_data['album_duration'],
                             is_favorite=form.cleaned_data['is_favorite'],
-                            image=form.cleaned_data['image'],
+                            image=form.cleaned_data['link_address_image'],
                             )
             album.save()
             return render(request, 'AppVibesU/home.html')
@@ -113,7 +113,7 @@ def podcastForm(request):
                             amount_of_episodes=form.cleaned_data['amount_of_episodes'],
                             podcast_duration=form.cleaned_data['podcast_duration'],
                             is_favorite=form.cleaned_data['is_favorite'],
-                            image=form.cleaned_data['image'],
+                            image=form.cleaned_data['link_address_image'],
                             )
             podcast.save()
             return render(request, 'AppVibesU/home.html')
@@ -168,7 +168,7 @@ def updateArtist(request, id_artist):
             artist.listeners=form.cleaned_data['listeners']
             artist.is_favorite=form.cleaned_data['is_favorite']
             artist.is_verified=form.cleaned_data['is_verified']
-            artist.image=form.cleaned_data['image']
+            artist.image=form.cleaned_data['link_address_image']
             artist.save()
             return redirect(reverse_lazy('artists'))
     else:
@@ -197,13 +197,13 @@ class artistList(LoginRequiredMixin, ListView):
 # artist Create
 class artistCreate(LoginRequiredMixin, CreateView):
     model = Artist
-    fields=['name','genre','listeners','is_favorite','is_verified','image']
+    fields=['name','genre','listeners','is_favorite','is_verified','link_address_image']
     success_url = reverse_lazy('artists')
 
 #artist Update
 class artistUpdate(LoginRequiredMixin, UpdateView):
     model = Artist
-    fields=['name','genre','listeners','is_favorite','is_verified','image']
+    fields=['name','genre','listeners','is_favorite','is_verified','link_address_image']
     success_url = reverse_lazy('artists')
 
 #artist Delete
@@ -228,13 +228,13 @@ class songList(LoginRequiredMixin, ListView):
 #Song Create
 class songCreate(LoginRequiredMixin, CreateView):
     model = Song
-    fields=['title','artist','album','length','image','mp3_track','plays','is_favorite']
+    fields=['title','artist','album','length','link_address_image','mp3_track','plays','is_favorite']
     success_url = reverse_lazy('songs')
 
 #Song Update
 class songUpdate(LoginRequiredMixin, UpdateView):
     model = Song
-    fields=['title','artist','album','length','image','mp3_track','plays','is_favorite']
+    fields=['title','artist','album','length','link_address_image','mp3_track','plays','is_favorite']
     success_url = reverse_lazy('songs')
 
 #Song Delete
@@ -258,13 +258,13 @@ class albumList(LoginRequiredMixin,ListView):
 #Album Create
 class albumCreate(LoginRequiredMixin, CreateView):
     model = Album
-    fields=['title','artist','genre','release_date','amount_of_songs','album_duration','is_favorite','image']
+    fields=['title','artist','genre','release_date','amount_of_songs','album_duration','is_favorite','link_address_image']
     success_url = reverse_lazy('albums')
 
 #Album Update
 class albumUpdate(LoginRequiredMixin, UpdateView):
     model = Album
-    fields=['title','artist','genre','release_date','amount_of_songs','album_duration','is_favorite','image']
+    fields=['title','artist','genre','release_date','amount_of_songs','album_duration','is_favorite','link_address_image']
     success_url = reverse_lazy('albums')
 
 #Album Delete
@@ -288,13 +288,13 @@ class podcastList(LoginRequiredMixin, ListView):
 #Podcast Create
 class podcastCreate(LoginRequiredMixin, CreateView):
     model = Podcast
-    fields=['title','host','genre','release_date','amount_of_episodes','podcast_duration','is_favorite','image']
+    fields=['title','host','genre','release_date','amount_of_episodes','podcast_duration','is_favorite','link_address_image']
     success_url = reverse_lazy('podcasts')
 
 #Podcast Update
 class podcastUpdate(LoginRequiredMixin, UpdateView):
     model = Podcast
-    fields=['title','host','genre','release_date','amount_of_episodes','podcast_duration','is_favorite','image']
+    fields=['title','host','genre','release_date','amount_of_episodes','podcast_duration','is_favorite','link_address_image']
     success_url = reverse_lazy('podcasts')
 
 #Podcast Delete

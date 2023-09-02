@@ -276,7 +276,7 @@
 }
 
 .form label {
-    width: 100px;
+    width: 180px;
 }
 
 .form__container label {
@@ -1242,7 +1242,7 @@ audio::-webkit-media-controls-enclosure {
 
   /* Media query for tablet view */
 
-  @media only screen  and (min-width:768px) and (max-width:1023px){
+  @media only screen  and (min-width:768px) and (max-width:991px){
 
     /* Navbar */
 
@@ -1425,3 +1425,11 @@ audio::-webkit-media-controls-enclosure {
         font-size: 30px;
       }
   }
+
+  /* Media Query for 992 and 1999px  */
+
+@media only screen and (min-width: 992px) and (max-width:1999px) {
+    .navbar-collapse a {
+        width: 95px;
+    }
+}
