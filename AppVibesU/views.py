@@ -194,11 +194,27 @@ def deleteArtist(request, id_artist):
 class artistList(LoginRequiredMixin, ListView):
     model = Artist
 
+    #if link_address_image.required = null, then assign a default img
+    def form_valid(self, form_class=None):
+        form = super(artistCreate, self).get_form(form_class)
+        if form.cleaned_data['link_address_image'] == None:
+            form.cleaned_data['link_address_image'] = "https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg"
+        return super().form_valid(form)  
+
 # artist Create
 class artistCreate(LoginRequiredMixin, CreateView):
     model = Artist
     fields=['name','genre','listeners','is_favorite','is_verified','link_address_image']
     success_url = reverse_lazy('artists')
+
+    #create a def to make lin_address_image field to NOT required
+    def get_form(self, form_class=None):
+        form = super(artistCreate, self).get_form(form_class)
+        form.fields['link_address_image'].required = False
+        return form
+
+   
+    
 
 #artist Update
 class artistUpdate(LoginRequiredMixin, UpdateView):
@@ -228,13 +244,13 @@ class songList(LoginRequiredMixin, ListView):
 #Song Create
 class songCreate(LoginRequiredMixin, CreateView):
     model = Song
-    fields=['title','artist','album','length','link_address_image','mp3_track','plays','is_favorite']
+    fields=['title','artist','album','length','link_address_image','link_address_mp3_track','plays','is_favorite']
     success_url = reverse_lazy('songs')
 
 #Song Update
 class songUpdate(LoginRequiredMixin, UpdateView):
     model = Song
-    fields=['title','artist','album','length','link_address_image','mp3_track','plays','is_favorite']
+    fields=['title','artist','album','length','link_address_image','link_address_mp3_track','plays','is_favorite']
     success_url = reverse_lazy('songs')
 
 #Song Delete

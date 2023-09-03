@@ -10,7 +10,7 @@ class Song(models.Model):
     album = models.CharField(max_length=50)
     length = models.CharField(max_length=10)
     link_address_image = models.CharField(max_length=250)
-    mp3_track = models.CharField(max_length=250, null=True)
+    link_address_mp3_track = models.CharField(max_length=250, null=True)
     plays = models.IntegerField()
     is_favorite = models.BooleanField(default=False)
     def __str__(self):

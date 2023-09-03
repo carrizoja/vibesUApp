@@ -276,7 +276,7 @@
 }
 
 .form label {
-    width: 180px;
+    width: 200px;
 }
 
 .form__container label {
@@ -568,7 +568,7 @@ section {
     display: none;
     position: absolute;
     background-color: #393939;
-    min-width: 160px;
+    min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 5px;
@@ -580,6 +580,7 @@ section {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    min-width: 100px;
 }
 
 /* Change color of dropdown links on hover */

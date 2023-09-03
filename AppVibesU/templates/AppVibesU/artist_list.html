@@ -13,7 +13,12 @@
     {% for artist in artist_list %}
     <div data-aos="zoom-out-up" class="card">
       <div class="card__image">
+        <!-- If artist.link_address_image == '' or artist.link_address_image == null, set default image  -->
+        {% if artist.link_address_image == '' or artist.link_address_image == null %}
+        <img src="https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg" alt="{{ artist.name }}">
+        {% else %}
         <img src="{{artist.link_address_image}}" alt="{{ artist.name }}">
+        {% endif %}
       </div>
       <div class="card__info">
         <h3>{{ artist.name }}</h3>
